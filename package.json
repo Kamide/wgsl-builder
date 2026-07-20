@@ -9,26 +9,30 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && vite build",
-    "check": "npm run typecheck && npm run lint && npm run format:check",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
     "dev": "vite",
+    "dev:host": "vite --host",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "preview": "vite preview",
+    "preview:host": "vite preview --host",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "typecheck": "tsc --noEmit"
+    "type-check": "tsc --build",
+    "type-check:watch": "tsc --build --watch"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "globals": "^17.6.0",
-    "prettier": "^3.8.3",
+    "globals": "^17.7.0",
+    "prettier": "3.9.5",
     "prettier-plugin-organize-imports": "^4.3.0",
     "typescript": "~6.0.3",
-    "typescript-eslint": "^8.59.3",
-    "vite": "^8.0.12",
-    "vite-plugin-dts": "^5.0.0",
-    "vitest": "^4.1.6"
+    "typescript-eslint": "^8.65.0",
+    "vite": "^8.1.5",
+    "vite-plugin-dts": "^5.0.3",
+    "vitest": "^4.1.10"
   }
 }
