@@ -49,12 +49,7 @@ export type Node =
 export type ScalarType = "bool" | "f32" | "i32" | "u32";
 
 export type TextureDimensions =
-  | "1d"
-  | "2d"
-  | "2d_array"
-  | "3d"
-  | "cube"
-  | "cube_array";
+  "1d" | "2d" | "2d_array" | "3d" | "cube" | "cube_array";
 
 export type VectorType = {
   size: number;
@@ -155,11 +150,7 @@ export type StatementNode =
   | ExpressionStatementNode;
 
 export type AddressSpace =
-  | "uniform"
-  | "storage"
-  | "workgroup"
-  | "private"
-  | "function";
+  "uniform" | "storage" | "workgroup" | "private" | "function";
 
 export type VarNode = BaseNode & {
   kind: "var";
